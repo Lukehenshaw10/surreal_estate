@@ -1,0 +1,41 @@
+.navbar {
+    background-color: rgb(245, 245, 245);
+    border-bottom: rgb(171, 182, 183);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .surrealEstateLogo {
+    height: 100px;
+    width: auto;
+  }
+  
+  .navbar-links {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links-item {
+    margin: 0;
+    padding: 2vw;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(56, 54, 54);
+  }
+  
+  /* Media Query */
+  @media only screen and (max-width: 768px) {
+    .surrealEstateLogo {
+      height: 70px;
+    }
+  
+    .navbar {
+      height: 70px;
+    }
+  
+    .navbar-links-item {
+      padding: 1.5vw;
+      padding-left: 5vw;
+    }
+  }
