@@ -9,11 +9,11 @@ const Properties = () => {
   const [properties, setProperties] = useState([]);
   const [alert, setAlert] = useState({ message: "" });
 
-  axios.defaults.baseURL = "http://localhost:3000/api/v1";
+  axios.defaults.baseURL = "http://localhost:4000/api/v1";
   const { search } = useLocation();
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/v1/PropertyListing${search}`)
+      .get(`http://localhost:4000/api/v1/PropertyListing${search}`)
       .then((response) => {
         setProperties(response.data);
       })

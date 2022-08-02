@@ -27,7 +27,7 @@ const AddProperty = () => {
     event.preventDefault();
     setAlert({ message: "", isSuccess: false });
     axios
-      .post(`http://localhost:3000/api/v1/PropertyListing/`, { ...fields })
+      .post(`http://localhost:4000/api/v1/PropertyListing/`, { ...fields })
       .then((res) => {
         console.log(res);
         setAlert({
